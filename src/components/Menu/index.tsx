@@ -5,6 +5,7 @@ import { ReactComponent as MenuIcon } from '../../assets/images/menu.svg'
 import useToggle from '../../hooks/useToggle'
 import { useActiveWeb3React } from '../../hooks'
 import { getEtherscanLink } from '../../utils'
+import { useTranslation } from 'react-i18next'
 
 import { ExternalLink } from '../../theme'
 
@@ -85,6 +86,7 @@ export default function Menu() {
   const node = useRef<HTMLDivElement>()
   const [open, toggle] = useToggle(false)
   const { chainId } = useActiveWeb3React()
+  const { t } = useTranslation()
 
   useEffect(() => {
     const handleClickOutside = e => {
@@ -114,23 +116,23 @@ export default function Menu() {
         <MenuFlyout>
           <MenuItem id="link" href="https://bscswap.info/">
             <PieChart size={14} />
-            Analytics
+            {t('analytics')}
           </MenuItem>
           <MenuItem id="link" href="https://t.me/bscswap">
             <Send size={14} />
-            Telegram
+            {t('telegram')}
           </MenuItem>
-          <MenuItem id="link" href="https://discord.gg/xjNuc56">
+          <MenuItem id="link" href="https://discord.gg/eXKPm8">
             <MessageCircle size={14} />
-            Discord
+            {t('discord')}
           </MenuItem>
           <MenuItem id="link" href={CODE_LINK}>
             <Code size={14} />
-            Code
+            {t('code')}
           </MenuItem>
           <MenuItem id="link" href={getEtherscanLink(chainId, '0xd954551853F55deb4Ae31407c423e67B1621424A', 'address')}>
             <BookOpen size={14} />
-            BscScan Contract
+            {t('bscscancontract')}
           </MenuItem>
         </MenuFlyout>
       )}

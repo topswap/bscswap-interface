@@ -3,6 +3,7 @@ import React, { useCallback, useContext, useEffect, useState } from 'react'
 import { ArrowDown } from 'react-feather'
 import ReactGA from 'react-ga'
 import { Text } from 'rebass'
+import { useTranslation } from 'react-i18next'
 import { ThemeContext } from 'styled-components'
 import AddressInputPanel from '../../components/AddressInputPanel'
 import { ButtonError, ButtonLight, ButtonPrimary } from '../../components/Button'
@@ -49,6 +50,7 @@ import { ClickableText } from '../Pool/styleds'
 
 export default function Swap() {
   useDefaultsFromURLSearch()
+  const { t } = useTranslation()
 
   const { account, chainId } = useActiveWeb3React()
   const theme = useContext(ThemeContext)
@@ -269,7 +271,7 @@ export default function Swap() {
 
           <AutoColumn gap={'md'}>
             <CurrencyInputPanel
-              label={independentField === Field.OUTPUT && !showWrap ? 'From (estimated)' : 'From'}
+              label={independentField === Field.OUTPUT && !showWrap ? t('fromestimated') : t('fromCapitalized')}
               value={formattedAmounts[Field.INPUT]}
               showMaxButton={!atMaxAmountInput}
               currency={currencies[Field.INPUT]}
@@ -307,7 +309,7 @@ export default function Swap() {
             <CurrencyInputPanel
               value={formattedAmounts[Field.OUTPUT]}
               onUserInput={handleTypeOutput}
-              label={independentField === Field.INPUT && !showWrap ? 'To (estimated)' : 'To'}
+              label={independentField === Field.INPUT && !showWrap ? t('toestimated') : t('toCapitalized')}
               showMaxButton={false}
               currency={currencies[Field.OUTPUT]}
               onCurrencySelect={address => onCurrencySelection(Field.OUTPUT, address)}
@@ -334,7 +336,7 @@ export default function Swap() {
                 <AutoColumn gap="4px">
                   <RowBetween align="center">
                     <Text fontWeight={500} fontSize={14} color={theme.text2}>
-                      Price
+                      {t('price')}
                     </Text>
                     <TradePrice
                       inputCurrency={currencies[Field.INPUT]}
@@ -361,7 +363,7 @@ export default function Swap() {
           </AutoColumn>
           <BottomGrouping>
             {!account ? (
-              <ButtonLight onClick={toggleWalletModal}>Connect Wallet</ButtonLight>
+              <ButtonLight onClick={toggleWalletModal}>{t('connectWallet')}</ButtonLight>
             ) : showWrap ? (
               <ButtonPrimary disabled={Boolean(wrapInputError)} onClick={onWrap}>
                 {wrapInputError ??
@@ -369,7 +371,7 @@ export default function Swap() {
               </ButtonPrimary>
             ) : noRoute && userHasSpecifiedInputOutput ? (
               <GreyCard style={{ textAlign: 'center' }}>
-                <TYPE.main mb="4px">Insufficient liquidity for this trade.</TYPE.main>
+                <TYPE.main mb="4px">{t('insufficientLiquidityForThisTrade')}</TYPE.main>
               </GreyCard>
             ) : showApproveFlow ? (
               <RowBetween>
