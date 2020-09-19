@@ -118,7 +118,7 @@ export default function Menu() {
             <PieChart size={14} />
             {t('analytics')}
           </MenuItem>
-          <MenuItem id="link" href="https://twitter.com/bscswap">
+          <MenuItem id="link" href="https://twitter.com/bscswapprotocol">
             <Send size={14} />
             Twitter
           </MenuItem>
@@ -126,7 +126,7 @@ export default function Menu() {
             <Send size={14} />
             {t('telegram')}
           </MenuItem>
-          <MenuItem id="link" href="https://discord.gg/eXKPm8">
+          <MenuItem id="link" href="https://discord.gg/mCZSA3w">
             <MessageCircle size={14} />
             {t('discord')}
           </MenuItem>
