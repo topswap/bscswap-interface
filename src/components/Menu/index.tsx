@@ -126,6 +126,10 @@ export default function Menu() {
             <MessageCircle size={14} />
             {t('discord')}
           </MenuItem>
+          <MenuItem id="link" href="https://bscswap.com/WeChat.jpg">
+            <MessageCircle size={14} />
+            WeChat
+          </MenuItem>
           <MenuItem id="link" href={CODE_LINK}>
             <Code size={14} />
             {t('code')}
