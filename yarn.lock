@@ -1129,12 +1129,17 @@
   resolved "https://registry.yarnpkg.com/@bscswap/contracts/-/contracts-1.0.1.tgz#396b65ff26af746f86e991ab0dce0b77724e5974"
   integrity sha512-UIDqa9bTjM297ThqEAiKp5gvCC6HkdHoL0/JdE/t4wCZiJmWTyhul0FtRLGc28dQ51PcliZeiQQOqyGNgZ4Pnw==
 
-"@bscswap/sdk@3.0.14":
-  version "3.0.14"
-  resolved "https://registry.yarnpkg.com/@bscswap/sdk/-/sdk-3.0.14.tgz#30545d88444de6d9ca6a0c846b7672061885e943"
-  integrity sha512-qJuNxVp1VX7VJ+hd4kYB5stbjxYrtFJ7Origtpa0+qDFbA96st4neL//to+LUHZbVXB2hsGmgsoC7PciTc1sQA==
+"@bscswap/contracts@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@bscswap/contracts/-/contracts-1.0.2.tgz#c6d639a43018bec808be02004c6a103b923fd604"
+  integrity sha512-/tJ/GviHfCqzGAkO2W2YkDkWNgcySueHfjlqhbXAA1EmOAhIqHr0IbT7PJpE2/dkegEnuv3moCCl2hndK8dHRA==
+
+"@bscswap/sdk@3.0.15":
+  version "3.0.15"
+  resolved "https://registry.yarnpkg.com/@bscswap/sdk/-/sdk-3.0.15.tgz#3d0d63b92471d16e24257156a1b8c241582ccdad"
+  integrity sha512-DSslMJyAlL3vUK+5Z3e6p2p0avIbHqj36ym2dCXNJ6G78sP79F4i51ivyFsWuW5n3LPesvi2OPO5l3zyWL9IgQ==
   dependencies:
-    "@bscswap/contracts" "1.0.1"
+    "@bscswap/contracts" "1.0.2"
     big.js "^5.2.2"
     decimal.js-light "^2.5.0"
     jsbi "^3.1.1"

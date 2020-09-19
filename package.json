@@ -23,7 +23,7 @@
     "@types/testing-library__cypress": "^5.0.5",
     "@typescript-eslint/eslint-plugin": "^2.31.0",
     "@typescript-eslint/parser": "^2.31.0",
-    "@bscswap/sdk": "3.0.14",
+    "@bscswap/sdk": "3.0.15",
     "@uniswap/token-lists": "^1.0.0-beta.16",
     "@bscswap/contracts": "1.0.1",
     "@web3-react/core": "^6.0.9",
