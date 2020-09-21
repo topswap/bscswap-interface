@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-import { BookOpen, Code, PieChart, MessageCircle, Send } from 'react-feather'
+import { BookOpen, Code, PieChart, MessageCircle, Send, CheckCircle } from 'react-feather'
 import styled from 'styled-components'
 import { ReactComponent as MenuIcon } from '../../assets/images/menu.svg'
 import useToggle from '../../hooks/useToggle'
@@ -141,6 +141,10 @@ export default function Menu() {
           <MenuItem id="link" href="https://medium.com/@bscswapprotocol">
             <BookOpen size={14} />
             Medium
+          </MenuItem>
+          <MenuItem id="link" href="https://coinmarketcap.com/exchanges/bscswap">
+            <CheckCircle size={14} />
+            CoinMarketCap
           </MenuItem>
           <MenuItem id="link" href={getEtherscanLink(chainId, '0xd954551853F55deb4Ae31407c423e67B1621424A', 'address')}>
             <BookOpen size={14} />
