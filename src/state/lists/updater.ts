@@ -1,4 +1,4 @@
-import { getVersionUpgrade, minVersionBump, VersionUpgrade } from '@uniswap/token-lists'
+import { getVersionUpgrade, VersionUpgrade } from '@uniswap/token-lists'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { DEFAULT_TOKEN_LIST_URL } from '../../constants'
@@ -44,9 +44,9 @@ export default function Updater(): null {
           case VersionUpgrade.PATCH:
           case VersionUpgrade.MINOR:
           case VersionUpgrade.MAJOR:
-            const min = minVersionBump(list.current.tokens, list.pendingUpdate.tokens)
+            // const min = minVersionBump(list.current.tokens, list.pendingUpdate.tokens)
             // automatically update minor/patch as long as bump matches the min update
-            if (bump >= min) {
+            //if (bump >= min) {
               dispatch(acceptListUpdate(listUrl))
               dispatch(
                 addPopup({
@@ -61,11 +61,11 @@ export default function Updater(): null {
                   }
                 })
               )
-            } else {
-              console.error(
-                `List at url ${listUrl} could not automatically update because the version bump was only PATCH/MINOR while the update had breaking changes and should have been MAJOR`
-              )
-            }
+            //} else {
+            //  console.error(
+            //    `List at url ${listUrl} could not automatically update because the version bump was only PATCH/MINOR while the update had breaking changes and should have been MAJOR`
+            //  )
+            //}
             break
 
           // this will be turned on later
