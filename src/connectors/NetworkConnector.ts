@@ -10,6 +10,7 @@ interface NetworkConnectorArguments {
 // taken from ethers.js, compatible interface with web3 provider
 type AsyncSendable = {
   isMetaMask?: boolean
+  isTrust?: boolean
   host?: string
   path?: string
   sendAsync?: (request: any, callback: (error: any, response: any) => void) => void
@@ -30,6 +31,7 @@ interface BatchItem {
 
 class MiniRpcProvider implements AsyncSendable {
   public readonly isMetaMask: false = false
+  public readonly isTrust: false = false
   public readonly chainId: number
   public readonly url: string
   public readonly host: string

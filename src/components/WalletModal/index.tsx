@@ -13,6 +13,7 @@ import Option from './Option'
 import { SUPPORTED_WALLETS } from '../../constants'
 import { ExternalLink } from '../../theme'
 import MetamaskIcon from '../../assets/images/metamask.png'
+import TrustWalletIcon from '../../assets/images/trustwallet.svg'
 import { ReactComponent as Close } from '../../assets/images/x.svg'
 import { injected, fortmatic, portis } from '../../connectors'
 import { OVERLAY_READY } from '../../connectors/Fortmatic'
@@ -205,6 +206,7 @@ export default function WalletModal({
   // get wallets user can switch too, depending on device/browser
   function getOptions() {
     const isMetamask = window.ethereum && window.ethereum.isMetaMask
+    const isTrust = window.ethereum && window.ethereum.isTrust
     return Object.keys(SUPPORTED_WALLETS).map(key => {
       const option = SUPPORTED_WALLETS[key]
       // check for mobile options
@@ -250,6 +252,18 @@ export default function WalletModal({
                 icon={MetamaskIcon}
               />
             )
+          } else if (option.name === 'TrustWallet') {
+            return (
+              <Option
+                id={`connect-${key}`}
+                key={key}
+                color={'#3375BB'}
+                header={'Install TrustWallet'}
+                subheader={null}
+                link={'https://trustwallet.com/'}
+                icon={TrustWalletIcon}
+              />
+            )
           } else {
             return null //dont want to return install twice
           }
@@ -258,8 +272,16 @@ export default function WalletModal({
         else if (option.name === 'MetaMask' && !isMetamask) {
           return null
         }
+        // don't return trustwallet if injected provider isn't trustwallet
+        else if (option.name === 'TrustWallet' && !isTrust) {
+          return null
+        }
         // likewise for generic
         else if (option.name === 'Injected' && isMetamask) {
+          return null
+        }
+        // likewise for generic
+        else if (option.name === 'Injected' && isTrust) {
           return null
         }
       }
