@@ -206,7 +206,6 @@ export default function WalletModal({
   // get wallets user can switch too, depending on device/browser
   function getOptions() {
     const isMetamask = window.ethereum && window.ethereum.isMetaMask
-    const isTrust = window.ethereum && window.ethereum.isTrust
     return Object.keys(SUPPORTED_WALLETS).map(key => {
       const option = SUPPORTED_WALLETS[key]
       // check for mobile options
@@ -258,7 +257,7 @@ export default function WalletModal({
                 id={`connect-${key}`}
                 key={key}
                 color={'#3375BB'}
-                header={'Install TrustWallet'}
+                header={'Download TrustWallet Apps'}
                 subheader={null}
                 link={'https://trustwallet.com/'}
                 icon={TrustWalletIcon}
@@ -272,16 +271,8 @@ export default function WalletModal({
         else if (option.name === 'MetaMask' && !isMetamask) {
           return null
         }
-        // don't return trustwallet if injected provider isn't trustwallet
-        else if (option.name === 'TrustWallet' && !isTrust) {
-          return null
-        }
         // likewise for generic
         else if (option.name === 'Injected' && isMetamask) {
-          return null
-        }
-        // likewise for generic
-        else if (option.name === 'Injected' && isTrust) {
           return null
         }
       }

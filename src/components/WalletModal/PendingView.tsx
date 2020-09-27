@@ -75,7 +75,6 @@ export default function PendingView({
   tryActivation: (connector: AbstractConnector) => void
 }) {
   const isMetamask = window?.ethereum?.isMetaMask
-  const isTrust = window?.ethereum?.isTrust
 
   return (
     <PendingSection>
@@ -109,12 +108,6 @@ export default function PendingView({
               return null
             }
             if (!isMetamask && option.name === 'MetaMask') {
-              return null
-            }
-            if (isTrust && option.name !== 'TrustWallet') {
-              return null
-            }
-            if (!isTrust && option.name === 'TrustWallet') {
               return null
             }
           }
