@@ -27,6 +27,16 @@ const ETHERSCAN_PREFIXES: { [chainId in ChainId]: string } = {
   97: 'testnet.bscscan.com'
 }
 
+const ANALYSIS_PREFIXES: { [chainId in ChainId]: string } = {
+  1: '',
+  3: '',
+  4: '',
+  5: '',
+  42: '',
+  56: '',
+  97: 'testnet.'
+}
+
 export function getEtherscanLink(chainId: ChainId, data: string, type: 'transaction' | 'token' | 'address'): string {
   const prefix = `https://${ETHERSCAN_PREFIXES[chainId] || ETHERSCAN_PREFIXES[1]}`
 
@@ -42,6 +52,10 @@ export function getEtherscanLink(chainId: ChainId, data: string, type: 'transact
       return `${prefix}/address/${data}`
     }
   }
+}
+
+export function getAnalysisLink(chainId: ChainId): string {
+  return `https://${ANALYSIS_PREFIXES[chainId] || ANALYSIS_PREFIXES[1]}bscswap.info`
 }
 
 // shorten the checksummed version of the input address to have 0x + 4 characters at start and end

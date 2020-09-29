@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { ReactComponent as MenuIcon } from '../../assets/images/menu.svg'
 import useToggle from '../../hooks/useToggle'
 import { useActiveWeb3React } from '../../hooks'
-import { getEtherscanLink } from '../../utils'
+import { getEtherscanLink, getAnalysisLink } from '../../utils'
 import { useTranslation } from 'react-i18next'
 
 import { ExternalLink } from '../../theme'
@@ -114,7 +114,7 @@ export default function Menu() {
       </StyledMenuButton>
       {chainId && open && (
         <MenuFlyout>
-          <MenuItem id="link" href="https://bscswap.info/">
+          <MenuItem id="link" href={getAnalysisLink(chainId)}>
             <PieChart size={14} />
             {t('analytics')}
           </MenuItem>
