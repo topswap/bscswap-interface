@@ -14,6 +14,7 @@ import { SUPPORTED_WALLETS } from '../../constants'
 import { ExternalLink } from '../../theme'
 import MetamaskIcon from '../../assets/images/metamask.png'
 import TrustWalletIcon from '../../assets/images/trustwallet.svg'
+import MathWalletIcon from '../../assets/images/mathwallet.svg'
 import { ReactComponent as Close } from '../../assets/images/x.svg'
 import { injected, fortmatic, portis } from '../../connectors'
 import { OVERLAY_READY } from '../../connectors/Fortmatic'
@@ -257,10 +258,22 @@ export default function WalletModal({
                 id={`connect-${key}`}
                 key={key}
                 color={'#3375BB'}
-                header={'Download TrustWallet Apps'}
+                header={'Download TrustWallet App'}
                 subheader={null}
                 link={'https://trustwallet.com/'}
                 icon={TrustWalletIcon}
+              />
+            )
+          } else if (option.name === 'MathWallet') {
+            return (
+              <Option
+                id={`connect-${key}`}
+                key={key}
+                color={'#000000'}
+                header={'Get MathWallet App'}
+                subheader={null}
+                link={'https://mathwallet.org/'}
+                icon={MathWalletIcon}
               />
             )
           } else {

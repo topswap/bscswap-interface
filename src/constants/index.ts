@@ -116,6 +116,14 @@ export const SUPPORTED_WALLETS: { [key: string]: WalletInfo } = {
     description: 'The most trusted & secure crypto wallet',
     href: null,
     color: '#3375BB'
+  },
+  MATHWALLET: {
+    connector: injected,
+    name: 'MathWallet',
+    iconName: 'mathwallet.svg',
+    description: 'Your Gateway to the World of Blockchain',
+    href: null,
+    color: '#000000'
   }
 }
 
