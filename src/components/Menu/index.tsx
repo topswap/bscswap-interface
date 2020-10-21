@@ -142,6 +142,14 @@ export default function Menu() {
             <BookOpen size={14} />
             Medium
           </MenuItem>
+          <MenuItem id="link" href="https://dappradar.com/binance-smart-chain/exchanges/bscswap">
+            <CheckCircle size={14} />
+            DappRadar
+          </MenuItem>
+          <MenuItem id="link" href="https://www.coingecko.com/en/exchanges/bscswap">
+            <CheckCircle size={14} />
+            CoinGecko
+          </MenuItem>
           <MenuItem id="link" href="https://coinmarketcap.com/exchanges/bscswap">
             <CheckCircle size={14} />
             CoinMarketCap
