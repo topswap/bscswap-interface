@@ -24,6 +24,7 @@ const Nav: React.FC = () => {
       <StyledAbsoluteLink href="#/swap" className="active">Exchange</StyledAbsoluteLink>
       <StyledAbsoluteLink href="https://bscswap.info" target="_blank">Analysis</StyledAbsoluteLink>
       <StyledAbsoluteLink href="https://bscswap.pro" target="_blank">BSCswap Pro</StyledAbsoluteLink>
+      <StyledAbsoluteLink href="https://stable.bscswap.com" target="_blank">BSCswap Stable</StyledAbsoluteLink>
       <StyledAbsoluteLink href="https://degenswap.io" target="_blank">DegenSwap</StyledAbsoluteLink>
       <StyledAbsoluteLink href="https://pool.bscswap.com" target="_blank">LaunchField</StyledAbsoluteLink>
     </StyledNav>
