@@ -129,10 +129,10 @@ const NetworkCard = styled(YellowCard)`
 `
 
 const UniIcon = styled.div`
-  transition: transform 0.3s ease;
-  :hover {
-    transform: rotate(-5deg);
-  }
+  // transition: transform 0.3s ease;
+  // :hover {
+  //   transform: rotate(-5deg);
+  // }
 `
 
 const HeaderControls = styled.div`
@@ -170,11 +170,11 @@ export default function Header() {
 
   return (
     <HeaderFrame>
-      <RowBetween style={{ alignItems: 'flex-start' }} padding="1rem 1rem 0 1rem">
+      <RowBetween style={{ alignItems: 'flex-start'}} padding="1rem 1rem 0 1rem" >
         <HeaderElement>
           <Title href=".">
             <UniIcon>
-              <img style={{ height: 50 }} src={isDark ? LogoDark : Logo} alt="logo" />
+              <img style={{ height: 100, width:400, marginTop:-35 }} src={isDark ? LogoDark : Logo} alt="logo" />
             </UniIcon>
           </Title>
         </HeaderElement>
