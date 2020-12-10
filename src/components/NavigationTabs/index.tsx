@@ -84,9 +84,9 @@ export function SwapPoolTabs({ active }: { active: 'swap' | 'pool' }) {
       <StyledNavLink id={`pool-nav-link`} to={'/pool'} isActive={() => active === 'pool'}>
         {t('pool')}
       </StyledNavLink>
-      <StyledAbsoluteLink id={`pool-nav-link`} target="_blank" href={'https://stable.bscswap.com/deposit.html'} >
+      {/* <StyledAbsoluteLink id={`pool-nav-link`} target="_blank" href={'https://stable.bscswap.com/deposit.html'} >
         Wrap BAI
-      </StyledAbsoluteLink>
+      </StyledAbsoluteLink> */}
     </Tabs>
   )
 }
