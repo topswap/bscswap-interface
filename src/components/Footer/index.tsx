@@ -136,6 +136,10 @@ const FooterBody = styled.div`
     display:block;
     margin: 8px;
     width:99%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    
 
 `
 const Footer: React.FC = () => {
@@ -144,7 +148,7 @@ const Footer: React.FC = () => {
         <FooterBody>
             <FooterFrame>
                 <JRLogo>
-                <img style={{ position: 'absolute', left:10, top:-23}} src={FighterIcon} alt="Fighter" />
+                  <img style={{ position: 'absolute', left:10, top:-23}} src={FighterIcon} alt="Fighter" />
                 </JRLogo>
                 <FooterCbox>
                     <Link01 />
