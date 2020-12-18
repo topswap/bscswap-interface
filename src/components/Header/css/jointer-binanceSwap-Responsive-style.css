@@ -1,0 +1,285 @@
+@charset "utf-8";
+
+
+@media (max-width:767px){
+  .swap-Block .wrap-Box{margin:0;}
+  .swap-Block .wrap-Box .swap-Wrap{padding:0;width:100%;}
+  .swap-Wrap .swap-Box .swap-Input .swap-Title .swap-Amt{width:100%;z-index:1;}
+  .swap-Wrap .swap-Box{padding:15px;min-height:auto;margin-top:15px;}
+  .swap-Wrap .swap-Box .swap-Input .swap-Title:first-child{margin-bottom:15px;}
+  .swap-Wrap .swap-Box .coin-Box{flex-wrap:nowrap;}
+  .swap-Wrap .swap-Btn .btn{width:100%;}
+  .swap-Wrap .swap-Box .swap-Coin:before{width:95px;height:95px;}
+  .swap-Wrap .swap-Box .swap-Coin img{width:85px;}
+  .swap-Wrap .swap-Box .total-Amt{padding-top:0;}
+  .swap-Wrap .swap-Icon a{top:-105px;left:20%;-webkit-transform:scale(.65);transform:scale(.65);}
+  .swap-Wrap .swap-Box .swap-Input .swap-Title:nth-child(02){margin-left:0;margin-top:20px;}
+
+
+
+  .headBTN04{display:block !important; }
+  .headBar01{display: none;}
+  .bscFooterCbox{width: 100%;order: 3;margin: 50px 0 0 0;}
+  .bscFLink01B a{ margin: 0 6px; }
+  .odometer-inside::before{font-size: 24px;display: inline-block;padding: 0px 0 5px 6px;height: 42px;line-height: 44px;}
+  .jwb-searchCSbox01 .jwb-ViewFLinkBox{padding-top:19px }
+  .bscHeadContainer .headBar02 .headBTN02, .bscHeadContainer .headBar02 .headBTN03  { display:none;}
+.headBar02{ display: flex; align-items: center; justify-content: center; }
+.odometer {font: normal 22px/50px 'Press Start 2P', arial, sans-serif !important;}
+.odometer.odometer-auto-theme .odometer-digit,.odometer.odometer-theme-train-station .odometer-digit{border-radius:6px;padding:0 .15em;color:#f3b92e;height:40px}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-train-station .odometer-digit .odometer-digit-inner {left: 5px;top: -5px;}
+.odometer-formatting-mark{margin:0;width:10px;overflow:hidden;padding:0;font-size:20px;position:relative;left:2px;bottom:-12px;color:#f3b92e}
+
+.jwb-searchRbox {width: 100%;border: 0;text-align: center;margin: 10px auto 2px auto;} 
+.jwb-searchLbox {width: 100%;padding-right: 0;} 
+.jwb-SLbox-title01{font: normal 11px/30px 'Press Start 2P',arial,sans-serif;color:#fff;width: 205px;}
+.jwb-SLbox-inputBox{width: calc(100% - 198px);}
+.jwb-SLbox-inputBox input{font: normal 11px/30px 'Press Start 2P',arial,sans-serif;color:#fff;background:0 0;outline:0;border:0;padding-left:4px;width:100%;}
+.jwb-searchCMbox .jwb-searchCSbox01{width:calc(100% - 32px);margin-bottom: 21px;}
+.jwb-searchCMbox .jwb-searchCSbox01:nth-last-child(01) {padding-left: 4px;}
+.binaceSwap {padding-top: 73px;}
+.jwb-tvSbox01 {margin: 16px;width: 100%;}
+.jwb-TokenViewMbox{ margin: 0;  }
+.bscFLink01B{color:#000;align-items:flex-start;flex-wrap:wrap;flex-direction:column}
+.bscFLink02B{color:#000;align-items:flex-start;flex-wrap:wrap;flex-direction:column;display: flex;margin-top: 30px;}
+.bscFLink02B a:nth-of-type(01){margin-bottom: 15px;}
+.jwb-MeterBox{margin: 20px 0 26px 0;}
+}
+
+@media (min-width: 320px) and (max-width: 500px){
+ .binaceSwap .binanceStitle01 {font-size: 21px;padding-top: 60px;line-height: 35px;padding-left: 8px;padding-right: 8px;} 
+ .binaceSwap .binanceStitle02 {font-size: 16px;line-height: 24px;padding: 0 15px;} 
+ .binaceSwap .binanceSBTNBox02 { flex-direction: column; justify-content: space-between; padding: 0 25px; position: static; left: auto; transform: translateX(0); } 
+ .binaceSwap .binanceSBTNBox02 a { margin:12px 0; } 
+ .binaceSwap .bs-BTN01 { max-width:400px; width: auto; padding-left:20px; padding-right:20px; font-size:17px; } 
+ .binaceSwap .binanceStitle03 { font-size: 14px; line-height: 22px; } 
+ .binanceSSFooter { flex-wrap: wrap; flex-direction: row; } 
+.jrlogo, .bnlogo { margin:0 auto 20px auto; } 
+.jAbout-Popup .social-Icons li { padding-right:4px; } 
+.jAbout-Popup .jiTitle03 { font-size:24px; line-height:30px; padding-bottom:15px; } 
+.jAbout-Popup .social-Icons { text-align:center; } 
+.jAbout-Popup .social-Icons li a .fab { font-size:11px; top:-4px; left:0; } 
+.ycp-TTFix01.align-right { margin: 0 auto; } 
+.htjinwall-popup { width:300px; right:50%; transform:translateX(20%); } 
+.investText01 .help-circle { top:1px; left:5px; } 
+.binanceSSFooter { height: auto; padding:10px 10px 30px 10px; } 
+.bssMBox { order: -1; width: 100%; margin-bottom: 15px; } 
+.bssFormBox input { width:290px; } 
+.bssInfoTextBox { flex-direction: column; } 
+.bssInfoTextBox span { border: 0px; } 
+.bssFormBox { flex-direction: column; } 
+.bssFormBTN { width: 97%; text-align: center; margin: 0 auto; display: block; max-width: 290px; } 
+.bssMtextBx { flex-wrap: wrap; flex-direction: column; } 
+.bssMtextBx span { display:none; } 
+.bssMtextBx .bssMText02 span { display:inline-block !important; }
+
+.swap-Wrap .swap-Box{margin-top:10px;padding:15px 0;}
+.swap-Wrap .swap-Box .swap-Input{justify-content:flex-start;}
+.swap-Wrap .swap-Box .swap-Input .swap-Title{text-align:left;width:100%;margin-left:0!important;}
+.swap-Wrap .swap-Box .swap-Input .swap-Title:first-child{margin-bottom:10px;margin-right:0;margin-left:0;}
+.swap-Wrap .swap-Box .swap-Input .swap-Title .swap-Amt{width:calc(100% - 29%);}
+.swap-Wrap .swap-Box .swap-Input .swap-Title .swap-Amt input{font-size:16px;}
+.swap-Wrap .swap-Box .total-Amt{font-size:13px;}
+.swap-Wrap .swap-Btn .btn{font-size:18px;height:40px;line-height:40px;}
+.swap-Wrap .swap-Textlink{flex-direction:column;margin-top:5px;}
+.swap-Wrap .swap-Textlink .swap-Link01, .swap-Wrap .swap-Textlink .swap-Link01 a{font-size:12px;line-height:18px;}
+.swap-Wrap .swap-Box .swap-Coin:before{width:105px;height:105px;top:-5px;}
+.swap-Wrap .swap-Box .swap-Coin img{width:95px;}
+.swap-Wrap .swap-Box .coin-Box .coin-Box01{width:100%;position:relative;}
+.swap-Wrap .swap-Icon{width:100%;height:100px;}
+
+.odometer{font: normal 16px/39px 'Press Start 2P', arial, sans-serif !important;} 
+.odometer.odometer-auto-theme .odometer-digit,.odometer.odometer-theme-train-station .odometer-digit{border-radius:6px;padding:0 .15em;color:#f3b92e;height: 30px;}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-train-station .odometer-digit .odometer-digit-inner {left: 3px;top: -5px;}
+.odometer-formatting-mark{margin:0;width:10px;overflow:hidden;padding:0;font-size:20px;position:relative;left:2px;bottom:-12px;color:#f3b92e}
+.odometer-inside::before{font-size: 16px;display:inline-block;padding: 0 0px 5px 3px;height: 30px;line-height: 30px;border-radius: 7px;}
+.jwb-searchRbox{padding-left: 0;}
+.jwbGreenBTN{display:inline-block;font: normal 11px/26px 'Press Start 2P',arial,sans-serif;background-color:#f3ba2f;color:#fff;padding: 5px 15px 12px 15px;border-radius:10px;}
+
+.jwb-SLbox-title01{font:normal 11px/30px 'Press Start 2P',arial,sans-serif;color:#fff;white-space: nowrap; width: 18px; overflow: hidden;}
+.jwb-SLbox-inputBox {  width: calc(100% - 20px); }
+.headLogo:after{top:-12px;right:calc(-100% + 31px);font:normal 6px/12px 'Press Start 2P',arial;padding:2px 5px 1px 5px;border-radius:3px;color:#fff}
+
+
+
+
+
+
+ }
+
+
+
+ @media (min-width: 501px) and (max-width: 767px){
+ .binaceSwap .binanceStitle01 { font-size: 24px; padding-top: 60px; line-height: 35px; } 
+ .binaceSwap .binanceStitle02 {font-size: 16px;line-height: 24px;padding: 0 15px;} 
+ .binaceSwap .binanceSBTNBox02 { flex-direction: column; justify-content: space-between; padding: 0 25px; position: static; left: auto; transform: translateX(0); } 
+ .binaceSwap .binanceSBTNBox02 a { margin:12px 0; } 
+ .binaceSwap .bs-BTN01 { max-width:400px; font-size: 20px; } 
+ .jAbout-Popup .social-Icons li { padding-right:4px; } 
+.jAbout-Popup .social-Icons li a { width:34px; height:34px; line-height:40px; } 
+.jAbout-Popup .social-Icons li a img { transform:scale(.9); } 
+.jAbout-Popup .jiTitle03 { font-size:24px; line-height:30px; padding-bottom:15px; } 
+.jAbout-Popup .social-Icons { text-align:center; } 
+.jAbout-Popup .social-Icons li { padding-right:10px; } 
+.jAbout-Popup .social-Icons li { padding-right:10px; } 
+.jAbout-Popup .social-Icons li a { font-size:16px; line-height:40px; } 
+.jAbout-Popup .jiTitle03 { font-size:20px; } 
+.jAbout-Popup .social-Icons li a { font-size:16px; line-height:35px; } 
+.jAbout-Popup .social-Icons li a i img { transform:scale(.7); position:relative; top:3px; } 
+.jAbout-Popup .tab-Content { margin-top:20px; } 
+.jAbout-Popup .watJntrText01 { margin-top:0!important; font-size:16px; line-height:24px; margin-bottom:30px; } 
+.ycp-TTFix01.align-right { margin: 0 auto; } 
+.investText01 .help-circle { top:0; left:6px; } 
+.investText01 { max-width:410px; margin:0 auto; } 
+.htjinwall-popup { right:50%; transform:translateX(25%); } 
+.binanceSSFooter { height: auto; padding:10px 10px 30px 10px; } 
+.bssMBox { order: -1; width: 100%; margin-bottom: 15px; } 
+.bssFormBox input { width:290px; } 
+.bssMtextBx span { display:none; } 
+.bssMtextBx .bssMText02 span { display:inline-block !important; } 
+
+.swap-Wrap .swap-Box{margin-top:10px;padding:15px;}
+.swap-Wrap .swap-Box .swap-Input{justify-content:flex-start;width:100%;}
+.swap-Wrap .swap-Box .swap-Input .swap-Title{text-align:left;width:100%;}
+.swap-Wrap .swap-Box .swap-Input .swap-Title:first-child{margin-bottom:10px;padding:0;margin-right:0;}
+.swap-Wrap .swap-Box .swap-Input .swap-Title .swap-Amt input{font-size:16px;}
+.swap-Wrap .swap-Box .total-Amt{font-size:13px;}
+.swap-Wrap .swap-Icon a{-webkit-transform:scale(.7);transform:scale(.7);left:0;top:-40px;}
+.swap-Wrap .swap-Btn .btn{font-size:18px;height:40px;line-height:40px;}
+.swap-Wrap .swap-Textlink{flex-direction:column;}
+.swap-Wrap .swap-Textlink .swap-Link01, .swap-Wrap .swap-Textlink .swap-Link01 a{font-size:12px;line-height:18px;}
+.swap-Wrap .swap-Box .coin-Box .coin-Box01{width:100%;position:relative;}
+.swap-Wrap .swap-Icon{width:100%;height:100px;}
+.swap-Wrap .swap-Icon a{-webkit-transform:rotate(90deg) translateY(13%);transform:rotate(90deg) translateY(13%);left:50%;top:-70px;}
+ }
+
+ @media (min-width: 768px) and (max-width: 991px) {
+    .binaceSwap .binanceStitle01 { font-size: 30px; line-height:45px; padding: 0 20px; } 
+.binaceSwap .binanceStitle02 { font-size: 20px; } 
+.binaceSwap .binanceSBTNBox02 { flex-direction: column; justify-content: space-between; padding: 0 25px; } 
+.binaceSwap .binanceSBTNBox02 a { margin:12px 0; display: inline-block; } 
+.jAbout-Popup .jiTitle03 { font-size:24px; line-height:30px; padding-bottom:15px; } 
+.jAbout-Popup .watJntrText01 { margin:20px auto 30px; } 
+.jAbout-Popup .watJntrText01 { margin-bottom:40px; line-height:24px; } 
+.jAbout-Popup .social-Icons { text-align:center; } 
+.ycp-TTFix01.align-right { margin: 0 auto; } 
+.binanceSSFooter { height: auto; padding:10px 10px 30px 10px; } 
+.bssMBox { order: -1; width: 100%; margin-bottom: 15px; } 
+.binaceSwap .bs-BTN01 { width: 90%; } 
+.odometer { font: normal 30px/50px 'Press Start 2P', arial, sans-serif !important; } 
+.jwb-SLbox-title01 { font-size: 12px; width: 206px; } 
+.jwb-SLbox-inputBox input { font-size: 12px; } 
+.binaceSwap .container-Grid { padding: 0 15px; } 
+.jwb-tvSbox01 { width: calc(33.33% - 22px); margin: 11px; min-height: 300px; } 
+.jwb-searchCMbox .jwb-searchCSbox01 { width: calc(50% - 32px); margin-bottom: 18px; } 
+.jwb-searchCMbox .jwb-searchCSbox01:nth-last-child(01) { width: calc(50% - 32px); padding-left: 8px; } 
+.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-train-station .odometer-digit { height: 50px; } 
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-train-station .odometer-digit .odometer-digit-inner { left: 7px; } 
+.odometer-formatting-mark { margin: 0px; width: 30px; font-size:30px; left: 9px; bottom: -18px; } 
+.jwb-TokenViewMbox { margin: 0 -11px; } 
+.jwbtvContainer { padding: 0 16px 15px 15px; } 
+.jwb-tvStitle01 { padding: 15px; } 
+.jwb-tvStitle01 a.jwbInfoBTN { right: 15px; top: 15px; } 
+.jwb-tvStitle02 { padding: 10px 0; } 
+.jwb-tvStitle01-2 { font-size: 12px; padding: 10px 0 15px 0; } 
+.jwb-TokenInfoMBox02 { padding: 10px 15px 15px 15px; } 
+.jwb-tvStitle02-2 { padding: 5px 0; } 
+.jwbGreenBTN { font: normal 12px/40px 'Press Start 2P', arial, sans-serif; } 
+.jwb-searchRbox {width: 60%;border: 0;text-align: center;margin: 10px auto 2px auto;} 
+.jwb-searchLbox {width: 100%;} 
+.jwb-SLbox-inputBox { width: calc(100% - 224px); } 
+.jwb-BTN01 { font: normal 14px/21px 'Press Start 2P'; } 
+
+.swap-Block .wrap-Box .swap-Wrap{width:100%;}
+.swap-Wrap .swap-Box{margin-top:25px;}
+.swap-Wrap .swap-Box .swap-Input .swap-Title .swap-Amt input{font-size:16px;}
+.swap-Wrap .swap-Box .swap-Input .swap-Title .swap-Amt{font-size:16px;margin-left:5px;width:260px;}
+.swap-Wrap .swap-Textlink .swap-Link01, .swap-Wrap .swap-Textlink .swap-Link01 a{font-size:13px;}
+.swap-Wrap .swap-Btn .btn{height:70px;line-height:70px;font-size:24px;}
+
+
+.headBar01{display: none;}
+.bscFooterCbox{ width: 100%; order: 3; margin: 30px 0 0 0; }
+.bscFLink01B a{ margin: 0 6px; }
+.odometer-inside::before{font-size: 30px;display: inline-block;padding: 0px 0 5px 6px;height: 50px;}
+.jwb-searchCSbox01 .jwb-ViewFLinkBox{padding-top:19px }
+.headBar02{ display: flex; align-items: center; justify-content: center; }
+ 
+
+ }
+ 
+
+
+ @media (min-width: 992px) and (max-width: 1199px){
+ .binaceSwap .binanceStitle01 { font-size: 36px; line-height:45px; padding: 0 80px; } 
+ .binaceSwap .binanceStitle02 { font-size:24px; padding: 0 30px; } 
+ .jAbout-Popup .jiTitle03 { font-size:30px; } 
+ .jAbout-Popup .watJntrText01 { padding-bottom:0; margin-bottom:50px; } 
+ .jAbout-Popup .watJntrText01 { margin:20px 0 30px; line-height:24px; } 
+ .odometer { font: normal 42px/80px 'Press Start 2P', arial, sans-serif !important; } 
+ .jwb-SLbox-title01 { font-size: 13px; } 
+ .jwb-SLbox-inputBox input { font-size: 13px; } 
+ .binaceSwap .container-Grid { padding: 0 15px; } 
+ .jwb-tvSbox01 { width: calc(33.33% - 32px); } 
+ .jwb-searchCMbox .jwb-searchCSbox01 {width: calc(33.33% - 32px);} 
+ .jwb-searchCMbox .jwb-searchCSbox01:nth-last-child(01) {width: calc(100% - 32px);padding-left: 8px;display: flex;justify-content: space-between;flex-direction: row;padding-top: 18px;} 
+
+ .swap-Block .wrap-Box{margin:0 -20px;}
+ .swap-Block .wrap-Box .swap-Wrap{padding:0 20px;}
+ .swap-Wrap .swap-Box{margin-top:15px;padding:20px 15px;min-height:320px;}
+ .swap-Wrap .swap-Box .coin-Box{padding-top:10px;}
+ .swap-Wrap .swap-Box .swap-Input .swap-Title .swap-Amt input{font-size:16px;}
+ .swap-Wrap .swap-Box .swap-Input .swap-Title .swap-Amt{font-size:16px;margin-left:5px;width:100%;}
+ .swap-Wrap .swap-Textlink .swap-Link01, .swap-Wrap .swap-Textlink .swap-Link01 a{font-size:11px;}
+ .swap-Wrap .swap-Box .swap-Input .swap-Title:nth-child(01){margin-right:20px;}
+ .swap-Wrap .swap-Box .swap-Input .swap-Title:nth-child(02){margin-left:20px;margin-right:0;}
+ .swap-Wrap .swap-Box .swap-Input .swap-Title{width:calc(50% - 20px);}
+ .swap-Wrap .swap-Box .swap-Coin{margin:5px 0;}
+ .swap-Wrap .swap-Box .swap-Coin img{width:90px;height:90px;}
+ .swap-Wrap .swap-Box .swap-Coin:before{width:105px;height:105px;}
+ .swap-Wrap .swap-Icon a{top:-90px;-webkit-transform:scale(.8);transform:scale(.8);left:-10px;}
+ .swap-Wrap .swap-Btn .btn{height:80px;line-height:80px;font-size:20px;}
+ .swap-Wrap .swap-Textlink{margin-top:5px;}
+
+ .headBar01{display: none;}
+ .bscFooterCbox{ width: 100%; order: 3; margin: 30px 0 0 0; }
+ .bscFLink01B a{ margin: 0 6px; }
+ .odometer-inside::before{font-size: 48px;display: inline-block;padding: 0px 0 5px 9px;}
+ .jwb-searchCSbox01 .jwb-ViewFLinkBox{padding-top:19px }
+
+
+ }
+
+
+ @media (min-width: 1200px) and (max-width: 1399px){
+ .binaceSwap .binanceStitle01 { font-size: 30px; line-height:45px; } 
+ .binaceSwap .binanceStitle02 { font-size: 21px; padding: 0 30px; } 
+ .binaceSwap .container-Grid { padding: 0 20px; } 
+ .jwb-TokenInfoMBox02 { padding: 10px 20px 20px 20px; } 
+ .jwbtvContainer { padding: 0 20px 20px 20px; } 
+ .jwb-tvStitle01 { padding:20px; } 
+.jwb-tvStitle01 a.jwbInfoBTN { right: 20px; top: 20px; } 
+
+.swap-Wrap .swap-Box{padding:15px;}
+.swap-Wrap .swap-Icon a{z-index:1;-webkit-transform:scale(.85);transform:scale(.85);}
+.swap-Wrap .swap-Box .coin-Box{padding-top:5px;}
+.swap-Wrap .swap-Box .swap-Coin{margin:0;-webkit-transform:scale(.85);transform:scale(.85);}
+.swap-Wrap{align-items:flex-start;}
+.swap-Wrap .swap-Box .swap-Input .swap-Title .swap-Amt input{font-size:16px;}
+.swap-Wrap .swap-Box .swap-Input .swap-Title:nth-child(01){margin-right:20px;}
+.swap-Wrap .swap-Box .swap-Input .swap-Title:nth-child(02){margin-left:20px;margin-right:0;}
+
+.rgdev-list {font-size: 9px;}
+.bsc-Header{ padding: 20px 10px;}
+.bscFooterCbox{width: 78%;}
+.bscFLink01B a { margin: 0 10px; }
+.md-radio label{font-size: 13px;line-height: 21px;}
+
+}
+
+
+ @media (min-width: 1400px) and (max-width: 1610px) {
+   .swap-Wrap .swap-Box{padding:25px 20px;}
+   .swap-Wrap .swap-Icon a{left:-10px;}
+ } 
+ @media (min-width: 1611px) and (max-width: 1860px) { } 
