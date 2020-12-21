@@ -24,14 +24,16 @@ const Link02: React.FC = () => {
 const Link01: React.FC = () => {
     return (
       <FLink01B>
-        <StyledAbsoluteLinkA href="#" >List new token</StyledAbsoluteLinkA> |
-        <StyledAbsoluteLinkA href="#" >Upgrade to v2</StyledAbsoluteLinkA> |
+        <StyledAbsoluteLinkA href="javascript:void(0);"  >List new token <div className="rgdevComingL">Coming Soon
+                </div></StyledAbsoluteLinkA> |
+        <StyledAbsoluteLinkA href="https://elementzero.network/bscswap_upgrade/" >Coming Soon</StyledAbsoluteLinkA> |
+        <StyledAbsoluteLinkA href="https://pool.bscswap.com/" >LaunchField</StyledAbsoluteLinkA> |
         <StyledAbsoluteLinkA href="#" >Voting</StyledAbsoluteLinkA> |
-        <StyledAbsoluteLinkA href="#" >Github</StyledAbsoluteLinkA> |
-        <StyledAbsoluteLinkA href="#" >Medium</StyledAbsoluteLinkA> |
-        <StyledAbsoluteLinkA href="#" >Telegram</StyledAbsoluteLinkA> |
-        <StyledAbsoluteLinkA href="#" >Twitter</StyledAbsoluteLinkA> |
-        <StyledAbsoluteLinkA href="#" >Discord</StyledAbsoluteLinkA> |
+        <StyledAbsoluteLinkA href="https://github.com/bscswap/contracts" >Github</StyledAbsoluteLinkA> |
+        <StyledAbsoluteLinkA href="https://bscswapprotocol.medium.com/" >Medium</StyledAbsoluteLinkA> |
+        <StyledAbsoluteLinkA href="https://t.me/bscswapgroup" >Telegram</StyledAbsoluteLinkA> |
+        <StyledAbsoluteLinkA href="https://twitter.com/bSWAPDAO" >Twitter</StyledAbsoluteLinkA> |
+        <StyledAbsoluteLinkA href="https://discord.com/invite/mCZSA3w" >Discord</StyledAbsoluteLinkA> |
         <StyledIcon01 href="#"></StyledIcon01>
       </FLink01B>
     )
