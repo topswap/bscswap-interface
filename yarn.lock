@@ -1134,26 +1134,13 @@
     babel-plugin-transform-async-to-promises "^0.8.15"
     tiny-warning "^1.0.3"
 
-"@bscswap/contracts@../contracts", "@bscswap/contracts@1.0.2":
+"@bscswap/contracts@../contracts":
   version "1.0.2"
 
 "@bscswap/sdk@../bscswap-sdk":
   version "3.0.15"
   dependencies:
     "@bscswap/contracts" "../contracts"
-    big.js "^5.2.2"
-    decimal.js-light "^2.5.0"
-    jsbi "^3.1.1"
-    tiny-invariant "^1.1.0"
-    tiny-warning "^1.0.3"
-    toformat "^2.0.0"
-
-"@bscswap/sdk@3.0.15":
-  version "3.0.15"
-  resolved "https://registry.yarnpkg.com/@bscswap/sdk/-/sdk-3.0.15.tgz#3d0d63b92471d16e24257156a1b8c241582ccdad"
-  integrity sha512-DSslMJyAlL3vUK+5Z3e6p2p0avIbHqj36ym2dCXNJ6G78sP79F4i51ivyFsWuW5n3LPesvi2OPO5l3zyWL9IgQ==
-  dependencies:
-    "@bscswap/contracts" "1.0.2"
     big.js "^5.2.2"
     decimal.js-light "^2.5.0"
     jsbi "^3.1.1"
