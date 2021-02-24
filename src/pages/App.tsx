@@ -28,6 +28,7 @@ const AppWrapper = styled.div`
   flex-flow: column;
   align-items: flex-start;
   overflow-x: hidden;
+  height: 100vh;
 `
 
 const HeaderWrapper = styled.div`
@@ -65,9 +66,9 @@ export default function App() {
         <Route component={GoogleAnalyticsReporter} />
         <Route component={DarkModeQueryParamReader} />
         <AppWrapper>
-          {/* <HeaderWrapper>
+          <HeaderWrapper>
             <Header />
-          </HeaderWrapper> */}
+          </HeaderWrapper>
           <BodyWrapper>
             <Popups />
             <Web3ReactManager>
