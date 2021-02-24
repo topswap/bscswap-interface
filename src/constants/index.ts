@@ -133,6 +133,16 @@ export const SUPPORTED_WALLETS: { [key: string]: WalletInfo } = {
     description: 'Your Gateway to the World of Blockchain',
     href: null,
     color: '#000000'
+  },
+  WALLETCONNECT: {
+    connector: walletconnect,
+    name: 'WalletConnect',
+    iconName: 'walletConnectIcon.svg',
+    description: 'Your Gateway to the World of Blockchain',
+    href: null,
+    color: '#000000',
+    mobileOnly: true,
+    mobile: true
   }
 }
 
